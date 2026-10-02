@@ -2,11 +2,31 @@
 
 Reusable skill for projects split across independent documentation/coordination, backend and frontend repositories.
 
+## Install with `npx skills`
+
+This repository follows the same installation mechanism as
+[Engineering Excellence](https://github.com/darkrei08/Engineering-Excellence):
+
+```bash
+npx skills@latest add darkrei08/multi-repo-product-workflow --skill multi-repo-product-workflow --global --agent pi --copy --yes
+```
+
+Keep the command on one line. Replace `--agent pi` with another supported
+agent (for example `claude`, `gemini`, `cursor` or `antigravity`) when
+needed. The `--global` flag installs the skill in the agent's global skills
+directory; omit it for a project-local installation.
+
+The installable source is
+`skills/multi-repo-product-workflow/`. The root `SKILL.md` and
+`references/` paths remain as compatibility links for direct repository
+consumers and existing project documentation.
+
 ## Included
 
-- `SKILL.md`: contract-first orchestration and repository ownership.
-- `references/git-lifecycle.md`: local-first commits with deferred push/PR delivery.
-- `agents/openai.yaml`: optional skill metadata.
+- `skills/multi-repo-product-workflow/SKILL.md`: canonical skill loaded by `npx skills`.
+- `skills/multi-repo-product-workflow/references/git-lifecycle.md`: local-first commit and delivery policy.
+- `agents/openai.yaml`: optional skill metadata for OpenAI-compatible agents.
+- Root `SKILL.md`: compatibility copy for direct linking.
 
 ## Core delivery policy
 

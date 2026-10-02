@@ -1,0 +1,6 @@
+interface:
+  display_name: "Multi-repo Product Workflow"
+  short_description: "Coordina docs, backend e frontend"
+  default_prompt: "Use $multi-repo-product-workflow to manage this multi-repository product task."
+policy:
+  allow_implicit_invocation: true
